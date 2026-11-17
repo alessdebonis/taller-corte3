@@ -1,0 +1,13 @@
+modelo                   C++ (Eigen)  Scikit-Learn
+iteraciones              1029.000000    266.000000
+tiempo_real_s               2.926560      0.425874
+tiempo_cpu_s                2.922000      0.418876
+uso_cpu_pct                99.844200     98.356820
+costo_final                 0.098945      0.063168
+exactitud_entrenamiento     0.965461      0.977493
+exactitud_prueba            0.964248      0.963197
+precision                   0.969248      0.969178
+recall                      0.954036      0.951794
+f1                          0.961582      0.960407
+
+Graficas guardadas en results/fig_cost.png y results/fig_confusion.png

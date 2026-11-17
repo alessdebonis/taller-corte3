@@ -1,0 +1,7 @@
+build/
+build-asan/
+data/mnist_784.csv
+data/train_5vs3.csv
+data/test_5vs3.csv
+.DS_Store
+__pycache__/

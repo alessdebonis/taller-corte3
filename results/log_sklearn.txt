@@ -1,0 +1,25 @@
+Cargando datos...
+Entrenamiento: (11552, 784)  Prueba: (1902, 784)
+
+Entrenando...
+Convergio en 266 iteraciones
+Costo final = 0.0632
+Tiempo real: 0.4259 s   Tiempo de CPU: 0.4189 s   Uso de CPU: 98.4 %
+Imagen de prueba 1: p(5) = 1.0000 -> dice 5 | en realidad es 5
+Imagen de prueba 2: p(5) = 0.9786 -> dice 5 | en realidad es 5
+Imagen de prueba 3: p(5) = 0.0072 -> dice 3 | en realidad es 3
+Imagen de prueba 4: p(5) = 1.0000 -> dice 5 | en realidad es 5
+Imagen de prueba 5: p(5) = 0.0000 -> dice 3 | en realidad es 3
+
+Exactitud en entrenamiento: 0.9775
+Exactitud en prueba:        0.9632
+Precision: 0.9692   Recall: 0.9518   F1: 0.9604
+
+Matriz de confusion (prueba):
+               dice 3   dice 5
+  era 3          983       27
+  era 5           43      849
+
+Calculando la curva de costo...
+Resultados guardados en la carpeta results/
+Versiones: Python 3.9.6 | scikit-learn 1.6.1 | numpy 2.0.2 | pandas 2.3.3

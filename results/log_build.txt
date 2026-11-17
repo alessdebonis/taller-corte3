@@ -1,0 +1,27 @@
+-- The CXX compiler identification is AppleClang 21.0.0.21000101
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Eigen: usando la version instalada en el sistema (5.0.1)
+-- Configuring done (2.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: ~/Downloads/taller-corte3/build
+[  8%] Building CXX object CMakeFiles/engine.dir/cpp/data.cpp.o
+[ 16%] Building CXX object CMakeFiles/engine.dir/cpp/logistic_regression.cpp.o
+[ 25%] Building CXX object CMakeFiles/engine.dir/cpp/metrics.cpp.o
+[ 33%] Linking CXX static library libengine.a
+[ 33%] Built target engine
+[ 41%] Building CXX object CMakeFiles/validation.dir/cpp/validation.cpp.o
+[ 50%] Linking CXX executable validation
+[ 50%] Built target validation
+[ 58%] Building CXX object CMakeFiles/train.dir/cpp/train.cpp.o
+[ 66%] Linking CXX executable train
+[ 66%] Built target train
+[ 75%] Building CXX object CMakeFiles/eda.dir/cpp/eda.cpp.o
+[ 83%] Linking CXX executable eda
+[ 83%] Built target eda
+[ 91%] Building CXX object CMakeFiles/linear_algebra.dir/cpp/linear_algebra.cpp.o
+[100%] Linking CXX executable linear_algebra
+[100%] Built target linear_algebra

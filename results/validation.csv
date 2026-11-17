@@ -1,0 +1,10 @@
+valor,a_mano,cpp,coincide
+Regresion lineal: w,0.3604,0.360409,si
+Regresion lineal: b,0.5541,0.554061,si
+Logistica: costo inicial J0,0.6931,0.693147,si
+Logistica: w despues de 1 paso,0.2792,0.279167,si
+Logistica: b despues de 1 paso,0,0,si
+Logistica: costo J1,0.5525,0.552457,si
+Logistica: w despues de 2 pasos,0.5044,0.504434,si
+Logistica: b despues de 2 pasos,0.005,0.00499419,si
+Logistica: costo J2,0.46,0.460049,si

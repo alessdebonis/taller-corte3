@@ -1,0 +1,5 @@
+Procesador: Apple M5 Pro
+Sistema: Darwin 25.5.0
+Compilador: Apple clang version 21.0.0 (clang-2100.1.1.101)
+CMake: cmake version 4.4.4
+Python: Python 3.9.6

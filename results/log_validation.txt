@@ -1,0 +1,60 @@
+=== Mini-dataset ===
+Imagen 1:  x =  0.9000   y = 1.0000  (es un 5)
+Imagen 2:  x =  0.5000   y = 1.0000  (es un 5)
+Imagen 3:  x =  1.5000   y = 1.0000  (es un 5)
+Imagen 4:  x = -2.0000   y = 0.0000  (es un 3)
+Imagen 5:  x = -1.4000   y = 0.0000  (es un 3)
+Imagen 6:  x = -0.4000   y = 0.0000  (es un 3)
+
+=== 1. Regresion lineal ===
+Promedios: x = -0.1500   y = 0.5000
+Sxy = 3.3500   Sxx = 9.2950
+w = Sxy / Sxx = 0.3604   b = 0.5541
+
+Ecuacion normal (A^T A) theta = A^T y:
+A^T A =
+ 6.0000 -0.9000
+-0.9000  9.4300
+A^T y = 3.0000 2.9000
+theta = [b, w] = 0.5541 0.3604
+
+Predicciones de la recta:
+x =  0.9000  ->  y =  0.8784
+x =  0.5000  ->  y =  0.7343
+x =  1.5000  ->  y =  1.0947   <- fuera de [0, 1]: no es una probabilidad
+x = -2.0000  ->  y = -0.1668   <- fuera de [0, 1]: no es una probabilidad
+x = -1.4000  ->  y =  0.0495
+x = -0.4000  ->  y =  0.4099
+
+=== 2. Regresion logistica (alpha = 0.5) ===
+
+-- Iteracion 0:  w = 0.000000   b = 0.000000
+z = 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+p = 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000
+Costo J = 0.693147
+p - y = -0.500000 -0.500000 -0.500000  0.500000  0.500000  0.500000
+dw = -0.558333   db = 0.000000
+
+-- Iteracion 1:  w = 0.279167   b = 0.000000
+z =  0.251250  0.139583  0.418750 -0.558333 -0.390833 -0.111667
+p = 0.562484 0.534839 0.603184 0.363933 0.403517 0.472112
+Costo J = 0.552457
+p - y = -0.437516 -0.465161 -0.396816  0.363933  0.403517  0.472112
+dw = -0.450534   db = -0.009988
+
+-- Iteracion 2:  w = 0.504434   b = 0.004994
+z =  0.458984  0.257211  0.761645 -1.003873 -0.701213 -0.196779
+p = 0.612773 0.563951 0.681711 0.268181 0.331543 0.450963
+Costo J = 0.460049
+
+=== 3. A mano vs C++ (4 decimales) ===
+Regresion lineal: w                a mano:  0.3604   C++:  0.3604   coincide
+Regresion lineal: b                a mano:  0.5541   C++:  0.5541   coincide
+Logistica: costo inicial J0        a mano:  0.6931   C++:  0.6931   coincide
+Logistica: w despues de 1 paso     a mano:  0.2792   C++:  0.2792   coincide
+Logistica: b despues de 1 paso     a mano:  0.0000   C++:  0.0000   coincide
+Logistica: costo J1                a mano:  0.5525   C++:  0.5525   coincide
+Logistica: w despues de 2 pasos    a mano:  0.5044   C++:  0.5044   coincide
+Logistica: b despues de 2 pasos    a mano:  0.0050   C++:  0.0050   coincide
+Logistica: costo J2                a mano:  0.4600   C++:  0.4600   coincide
+9 de 9 valores coinciden.

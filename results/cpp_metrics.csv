@@ -1,0 +1,2 @@
+modelo,iteraciones,tiempo_real_s,tiempo_cpu_s,uso_cpu_pct,costo_final,exactitud_entrenamiento,exactitud_prueba,precision,recall,f1
+C++ (Eigen),1029,2.92656,2.922,99.8442,0.0989445,0.965461,0.964248,0.969248,0.954036,0.961582

@@ -1,0 +1,61 @@
+Cargando datos...
+Entrenamiento: 11552 imagenes x 784 pixeles
+Prueba:        1902 imagenes
+Memoria de la matriz de entrenamiento: 69.0977 MB
+
+=== Optimizacion del gradiente ===
+Bucles for: 21.1364 ms por gradiente
+Eigen:      2.8148 ms por gradiente
+Eigen es 7.5090 veces mas rapido
+Diferencia maxima entre los dos resultados: 9.0206e-16
+
+=== Entrenamiento ===
+alpha = 0.5000   maximo de iteraciones = 3000   tolerancia = 1.0000e-05
+Convergio en 1029 iteraciones
+Costo inicial = 0.6931   costo final = 0.0989
+Tiempo real: 2.9359 s   Tiempo de CPU: 2.9287 s   Uso de CPU: 99.8 %
+
+=== Inferencia sobre imagenes nuevas ===
+Imagen de prueba 1: p(5) = 1.0000 -> dice 5 | en realidad es 5
+Imagen de prueba 2: p(5) = 0.9281 -> dice 5 | en realidad es 5
+Imagen de prueba 3: p(5) = 0.0104 -> dice 3 | en realidad es 3
+Imagen de prueba 4: p(5) = 0.9995 -> dice 5 | en realidad es 5
+Imagen de prueba 5: p(5) = 0.0026 -> dice 3 | en realidad es 3
+
+Exactitud en entrenamiento: 0.9655
+Exactitud en prueba:        0.9642
+Precision: 0.9692   Recall: 0.9540   F1: 0.9616
+
+Matriz de confusion (prueba):
+               dice 3   dice 5
+  era 3          983       27
+  era 5           41      851
+
+Resultados guardados en la carpeta results/
+Process 8012 is not debuggable. Due to security restrictions, leaks can only show or save contents of readonly memory of restricted processes.
+
+Process:         train [8012]
+Path:            /Users/USER/Downloads/*/train
+Load Address:    0x100658000
+Identifier:      train
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  leaks [8011]
+Target Type:     live task
+
+Date/Time:       2026-11-17 11:33:28.522 -0500
+Launch Time:     2026-11-17 11:33:24.941 -0500
+OS Version:      macOS 26.5.2 (25F84)
+Report Version:  7
+Analysis Tool:   /usr/bin/leaks
+
+Physical footprint:         95.1M
+Physical footprint (peak):  165.0M
+Idle exit:                  untracked
+----
+
+leaks Report Version: 4.0, multi-line stacks
+Process 8012: 192 nodes malloced for 16 KB
+Process 8012: 0 leaks for 0 total leaked bytes.
+
